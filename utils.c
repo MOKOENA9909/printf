@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* is_printable - Evaluates if a char is printable
-* @c: Char to be evaluated.
+* is_printable - evaluates if a char is printable
+* @c: char to be evaluated.
 *
 * Return: 1 if c is printable, 0 otherwise
 */
@@ -51,11 +51,11 @@ return (0);
 */
 long int convert_size_number(long int num, int size)
 {
-if (size == S_LONG)
-return (num);
-else if (size == S_SHORT)
-return ((short)num);
-return ((int)num);
+  if (size == S_LONG)
+  return (num);
+  else if (size == S_SHORT)
+  return ((short)num);
+  return ((int)num);
 }
 /**
 * convert_size_unsgnd - Casts a number to the specified size
