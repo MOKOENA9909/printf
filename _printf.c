@@ -3,10 +3,10 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - Custom printf function
+ * _printf - custom printf function
  * @format: format string.
  *
- * Return: The number of printed characters.
+ * Return: The Number of printed characters.
  */
 int _printf(const char *format, ...)
 {
@@ -25,13 +25,13 @@ int _printf(const char *format, ...)
 
 		if (format[i] != '%')
 		{
-			buffer[buff_ind++] = format[i];
-			printed_chars++;
+		buffer[buff_ind++] = format[i];
+		printed_chars++;
 
-			if (buff_ind == BUFF_SIZE)
-			{
-				print_buffer(buffer, &buff_ind);
-			}
+		if (buff_ind == BUFF_SIZE)
+		{
+		print_buffer(buffer, &buff_ind);
+		}
 		}
 		else
 		{
