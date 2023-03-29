@@ -141,11 +141,11 @@ int flags, int width, int precision, int size)
 unsigned int n, m, i, sum;
 unsigned int a[32];
 int count;
-UNUSED(buffer);
-UNUSED(flags);
-UNUSED(width);
-UNUSED(precision);
-UNUSED(size);
+  UNUSED(buffer);
+  UNUSED(flags);
+  UNUSED(width);
+  UNUSED(precision);
+  UNUSED(size);
 n = va_arg(types, unsigned int);
 m = 2147483648; /* (2 ^ 31) */
 a[0] = n / m;
@@ -160,8 +160,8 @@ sum += a[i];
 if (sum || i == 31)
 {
 char z = '0' + a[i];
-write(1, &z, 1);
-count++;
+  write(1, &z, 1);
+  count++;
 }
 }
 return (count);
