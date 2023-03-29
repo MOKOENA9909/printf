@@ -1,4 +1,4 @@
-ALX Project 0x11. C - printf
+alx Project 0x11. C - printf
 
 Project Requirements
 General
