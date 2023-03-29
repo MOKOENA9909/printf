@@ -3,11 +3,11 @@
 
 /**
 * print_unsigned - Prints an unsigned number
-* @types: List a of arguments
-* @buffer: Buffer array to handle print
-* @flags: Calculates active flags
+* @types: list a of arguments
+* @buffer: buffer array to handle print
+* @flags: calculates active flags
 * @width: get width
-* @precision: Precision specification
+* @precision: precision specification
 * @size: Size specifier
 * Return: Number of chars printed.
 */
@@ -29,8 +29,8 @@ int flags, int width, int precision, int size)
 		buffer[i--] = (num % 10) + '0';
 		num /= 10;
 	}
-	i++;
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+i++;
+return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
 /************* PRINT UNSIGNED NUMBER IN OCTAL ****************/
