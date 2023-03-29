@@ -1,11 +1,11 @@
 #include "main.h"
 /************************* PRINT CHAR *************************/
 /**
-* print_char - Prints a char
-* @types: List a of arguments
-* @buffer: Buffer array to handle print
-* @flags: Calculates active flags
-* @width: Width
+* print_char - prints a char
+* @types: list a of arguments
+* @buffer: buffer array to handle print
+* @flags: calculates active flags
+* @width: width
 * @precision: Precision specification
 * @size: Size specifier
 * Return: Number of chars printed
@@ -80,12 +80,12 @@ return (write(1, str, length));
 int print_percent(va_list types, char buffer[],
 int flags, int width, int precision, int size)
 {
-UNUSED(types);
-UNUSED(buffer);
-UNUSED(flags);
-UNUSED(width);
-UNUSED(precision);
-UNUSED(size);
+  UNUSED(types);
+  UNUSED(buffer);
+  UNUSED(flags);
+  UNUSED(width);
+  UNUSED(precision);
+  UNUSED(size);
 return (write(1, "%%", 1));
 }
 /************************* PRINT INT *************************/
